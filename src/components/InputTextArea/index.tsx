@@ -1,7 +1,5 @@
 import { Container, InputTextAreaContainer } from "./styles";
-
 import { useApp } from "../../contexts/ContextApi";
-import copy from "../../assets/images/svgs/copy.svg";
 import ToastTextCopied from "../ToastTextCopied";
 import { IconCopy } from "../../assets/images/svgs";
 
