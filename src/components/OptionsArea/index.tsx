@@ -34,7 +34,7 @@ export default () => {
   };
 
   return (
-    <OptionsAreaContainer>
+    <OptionsAreaContainer className="flex relative  flex-col sm:flex-row">
       <OptionsAreaButton onClick={() => transformToUppercase()}>
         UPPERCASE
       </OptionsAreaButton>

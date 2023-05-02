@@ -4,7 +4,6 @@ export const AsideContainer = styled.aside`
   width: 90px;
   height: 100vh;
   background-color: #7d53de;
-  border-right: 1px solid #ddd;
   overflow-y: auto;
   overflow-x: hidden;
   position: fixed;
