@@ -9,6 +9,7 @@ export default () => {
     <AsideContainer>
       <AsideIconsArea>
         <img
+          className="hover:rotate-90 transition-all ease-in-out duration-300  hover:scale-110"
           style={{ cursor: "pointer" }}
           width={"30px"}
           onClick={() => setModalIsOpen(true)}

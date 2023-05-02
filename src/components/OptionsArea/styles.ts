@@ -21,14 +21,14 @@ export const OptionsAreaButton = styled.button`
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: #7d53de;
+  border: 2px solid #fff;
   border-radius: 5px;
   padding: 15px;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   &:hover {
-    background-color: #ddd;
+    color: #fff;
   }
 `;
 
