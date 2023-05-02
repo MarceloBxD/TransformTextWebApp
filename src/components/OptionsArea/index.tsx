@@ -26,16 +26,16 @@ export default () => {
   return (
     <OptionsAreaContainer>
       <OptionsAreaButton onClick={() => transformToUppercase()}>
-        Uppercase
+        UPPERCASE
       </OptionsAreaButton>
       <OptionsAreaButton onClick={() => transformToLowercase()}>
-        Lowercase
+        lowercase
       </OptionsAreaButton>
       <OptionsAreaButton onClick={() => transformToBold()}>
-        Bold
+        <TextBold>Bold</TextBold>
       </OptionsAreaButton>
       <OptionsAreaButton onClick={() => transformToUnderline()}>
-        Underline
+        <u>Underline</u>
       </OptionsAreaButton>
     </OptionsAreaContainer>
   );

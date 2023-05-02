@@ -1,25 +1,21 @@
 import { AsideContainer, AsideIconsArea } from "./styles";
-import close from "../../assets/images/svgs/close.svg";
-import home from "../../assets/images/svgs/home.svg";
-import help from "../../assets/images/svgs/help.svg";
+import { IconHome, IconHelp, IconClose } from "../../assets/images/svgs";
 
 import { useApp } from "../../contexts/ContextApi";
 
-import { useState } from "react";
-
 export default () => {
-  const { modalIsOpen, setModalIsOpen }: any = useApp();
+  const { setModalIsOpen }: any = useApp();
   return (
     <AsideContainer>
       <AsideIconsArea>
         <img
           style={{ cursor: "pointer" }}
           width={"30px"}
-          onClick={() => setModalIsOpen(modalIsOpen)}
-          src={close}
+          onClick={() => setModalIsOpen(true)}
+          src={IconClose}
         />
-        <img style={{ cursor: "pointer" }} width={"30px"} src={home} />
-        <img style={{ cursor: "pointer" }} width={"30px"} src={help} />
+        <img style={{ cursor: "pointer" }} width={"30px"} src={IconHome} />
+        <img style={{ cursor: "pointer" }} width={"30px"} src={IconHelp} />
       </AsideIconsArea>
     </AsideContainer>
   );

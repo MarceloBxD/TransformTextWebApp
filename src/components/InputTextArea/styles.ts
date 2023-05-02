@@ -10,25 +10,6 @@ export const Container = styled.div`
   justify-content: center;
 `;
 
-export const Image = styled.img`
-  width: 35px;
-  background-color: red;
-  display: flex;
-  height: 35px;
-  object-fit: cover;
-  border-radius: 50%;
-  background-color: #ccc;
-  padding: 10px;
-  margin-top: -110px;
-  cursor: pointer;
-  justify-content: flex-end;
-  transition: all 0.2s linear;
-
-  :hover {
-    transform: scale(1.05);
-  }
-`;
-
 export const InputTextAreaContainer = styled.textarea`
   width: 33.33%;
   display: flex;
