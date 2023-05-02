@@ -1,26 +1,36 @@
 import { OptionsAreaContainer, OptionsAreaButton, TextBold } from "./styles";
-
 import { useApp } from "../../contexts/ContextApi";
 
 export default () => {
-  const { inputValue, setInputValue }: any = useApp();
+  const {
+    inputValue,
+    setInputValue,
+    setTextBold,
+    textBold,
+    setTextUnderlined,
+    textUnderlined,
+  }: any = useApp();
 
   const transformToUppercase = () => {
     setInputValue(inputValue.toUpperCase());
+    setTextBold(false);
+    setTextUnderlined(false);
   };
 
   const transformToLowercase = () => {
     setInputValue(inputValue.toLowerCase());
+    setTextBold(false);
+    setTextUnderlined(false);
   };
 
   const transformToBold = () => {
-    // transformar o texto para negrito
-    console.log("transformToBold");
+    setTextBold(!textBold);
+    setTextUnderlined(false);
   };
 
   const transformToUnderline = () => {
-    // transformar o texto para sublinhado
-    console.log("transformToUnderline");
+    setTextUnderlined(!textUnderlined);
+    setTextBold(false);
   };
 
   return (

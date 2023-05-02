@@ -32,7 +32,7 @@ export const OptionsAreaButton = styled.button`
   }
 `;
 
-export const TextBold = styled.span`
+export const TextBold = styled.p`
   font-weight: bold;
   font-size: 16px;
   color: #333;

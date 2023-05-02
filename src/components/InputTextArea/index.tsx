@@ -1,14 +1,18 @@
 import { Container, InputTextAreaContainer } from "./styles";
 
 import { useApp } from "../../contexts/ContextApi";
-
 import copy from "../../assets/images/svgs/copy.svg";
 import ToastTextCopied from "../ToastTextCopied";
 
 export default () => {
-  const { inputValue, setInputValue, textCopied, setTextCopied }: any =
-    useApp();
-
+  const {
+    inputValue,
+    setInputValue,
+    textCopied,
+    setTextCopied,
+    textBold,
+    textUnderlined,
+  }: any = useApp();
   const copyInputValue = () => {
     if (!inputValue) {
       setTextCopied(false);
@@ -23,6 +27,13 @@ export default () => {
       {textCopied && <ToastTextCopied />}
       <InputTextAreaContainer
         value={inputValue}
+        className={
+          textBold
+            ? "font-bold"
+            : "font-normal" && textUnderlined
+            ? "underline"
+            : "no-underline"
+        }
         onChange={(e) => setInputValue(e.target.value)}
         placeholder="Insira seu texto..."
       ></InputTextAreaContainer>

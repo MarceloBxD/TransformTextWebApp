@@ -6,6 +6,8 @@ export const AppProvider = ({ children }: any) => {
   const [inputValue, setInputValue] = useState("");
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [textCopied, setTextCopied] = useState(false);
+  const [textBold, setTextBold] = useState(false);
+  const [textUnderlined, setTextUnderlined] = useState(false);
 
   const value = {
     inputValue,
@@ -14,6 +16,10 @@ export const AppProvider = ({ children }: any) => {
     setModalIsOpen,
     textCopied,
     setTextCopied,
+    textBold,
+    setTextBold,
+    textUnderlined,
+    setTextUnderlined,
   };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };
