@@ -8,6 +8,7 @@ export const AppProvider = ({ children }: any) => {
   const [textCopied, setTextCopied] = useState(false);
   const [textBold, setTextBold] = useState(false);
   const [textUnderlined, setTextUnderlined] = useState(false);
+  const [showDropDown, setShowDropDown] = useState(false);
 
   const value = {
     inputValue,
@@ -20,6 +21,8 @@ export const AppProvider = ({ children }: any) => {
     setTextBold,
     textUnderlined,
     setTextUnderlined,
+    showDropDown,
+    setShowDropDown,
   };
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;
 };

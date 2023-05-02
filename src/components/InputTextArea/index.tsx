@@ -3,6 +3,7 @@ import { Container, InputTextAreaContainer } from "./styles";
 import { useApp } from "../../contexts/ContextApi";
 import copy from "../../assets/images/svgs/copy.svg";
 import ToastTextCopied from "../ToastTextCopied";
+import { IconCopy } from "../../assets/images/svgs";
 
 export default () => {
   const {
@@ -40,7 +41,7 @@ export default () => {
       <img
         className="w-8 p-2 -mt-28 hover:scale-110 rounded-md cursor-pointer"
         onClick={() => copyInputValue()}
-        src={copy}
+        src={IconCopy}
       />
     </Container>
   );

@@ -5,6 +5,7 @@ import InputTextArea from "./components/InputTextArea/index.js";
 import ExitModal from "./components/ExitModal/index.js";
 import { useApp } from "./contexts/ContextApi.js";
 import MobileHeader from "./components/MobileHeader/index.js";
+import { IconImage } from "./assets/images/svgs/index.js";
 
 function App() {
   const { modalIsOpen }: any = useApp();
@@ -13,7 +14,11 @@ function App() {
       <Aside />
       <MobileHeader />
       {!modalIsOpen ? (
-        <div className="flex flex-col justify-center h-screen">
+        <div className="flex flex-col items-center justify-center h-screen">
+          <div className="flex w-10 flex-col items-center justify-center">
+            <h1 className="text-3xl font-bold">Text Transform</h1>
+            <img src={IconImage} />
+          </div>
           <OptionsAreaContainer />
           <InputTextArea />
           <GlobalStyle />
