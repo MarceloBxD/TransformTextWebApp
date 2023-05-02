@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const OptionsAreaContainer = styled.div`
   width: 33.33%;
   position: relative;
-  top: 30px;
+  top: 20px;
   justify-content: center;
   align-items: center;
   margin: 0 auto;

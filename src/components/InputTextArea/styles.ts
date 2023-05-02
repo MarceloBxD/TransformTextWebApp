@@ -10,8 +10,8 @@ export const Container = styled.div`
 `;
 
 export const InputTextAreaContainer = styled.textarea`
-  width: 33.33%;
   display: flex;
+  width: 50%;
   margin: 50px auto;
   justify-content: center;
   top: 30px;

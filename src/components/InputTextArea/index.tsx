@@ -24,7 +24,7 @@ export default () => {
   };
 
   return (
-    <Container className="sm: mt-20">
+    <Container>
       {textCopied && <ToastTextCopied />}
       <InputTextAreaContainer
         value={inputValue}

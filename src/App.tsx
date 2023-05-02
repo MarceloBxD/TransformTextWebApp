@@ -14,9 +14,9 @@ function App() {
       <Aside />
       <MobileHeader />
       {!modalIsOpen ? (
-        <div className="flex flex-col items-center justify-center h-screen">
-          <div className="flex w-10 flex-col items-center justify-center">
-            <h1 className="text-3xl font-bold">Text Transform</h1>
+        <div className="flex flex-col items-center mt-20 md:mt-10 gap-20 py-5">
+          <div className="hidden md:flex w-10 flex-col items-center justify-center">
+            <h1 className="text-3xl font-bold">Text Transformer</h1>
             <img src={IconImage} />
           </div>
           <OptionsAreaContainer />
